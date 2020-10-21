@@ -18,7 +18,6 @@ const db = new sqlite3.Database('./db/election.db', err => {
 });
 
 // GET all candidates
-// THIS METHOD IS THE KEY COMPONENT TO ALLOW SQL COMMANDS IN NODE.JS
 app.get('/api/candidates', (req, res) => {
     const sql = `SELECT * FROM candidates`;
     const params = [];
