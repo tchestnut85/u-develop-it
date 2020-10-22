@@ -48,3 +48,5 @@ router.delete('/party/:id', (req, res) => {
         res.json({ message: 'successfully deleted', changes: this.changes });
     });
 });
+
+module.exports = router;
